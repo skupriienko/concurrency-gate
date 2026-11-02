@@ -1,5 +1,7 @@
 import time
+
 from concurrency_gate.gate import parse_task_spec, partition_into_stages
+
 
 def test_stress_concurrency_gate():
     # 2,000 tasks with intentional write conflicts on 5 shared files
