@@ -1,0 +1,1 @@
+pytest>=7.0.0\npytest-cov>=4.0.0\nruff>=0.1.0\nmypy>=1.0.0\npre-commit>=3.0.0\n

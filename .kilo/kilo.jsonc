@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Kilo-Org/kilocode/main/schemas/kilo.json",
+  "version": "1.0.0",
+  "name": "concurrency-gate",
+  "description": "Bernstein Multi-Agent Concurrency Safety & Parallel Task Partitioning Gate",
+  "tools": [
+    {
+      "name": "concurrency-gate",
+      "command": "concurrency-gate",
+      "description": "Enforces Bernstein's conditions to prevent subagent race conditions and partition task graphs into parallel waves."
+    }
+  ],
+  "rules": [
+    ".kilo/rules/concurrency-gate.md"
+  ]
+}
