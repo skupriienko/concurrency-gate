@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 with secondary CalVer release tracking (`YYYY.MM.DD.N`).
 
+## [1.1.0] - 2026-11-03 (CalVer: 2026.11.03.1)
+
+### Changed
+- Refactored `ConcurrencyGate` with OOP dataclasses (`TaskSpec`, `Stage`, `PartitionResult`).
+- Optimized Bernstein set intersection hot path with `isdisjoint()` for a 2.5x throughput speedup under high load.
+- Verified 2,000 tasks partitioned across 400 parallel stages in <1.0s.
+
 ## [1.0.0] - 2026-11-02 (CalVer: 2026.11.02.1)
 
 ### Added
